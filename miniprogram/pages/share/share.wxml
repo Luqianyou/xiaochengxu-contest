@@ -1,0 +1,10 @@
+<!--pages/share/share.wxml-->
+<view class=" share1"><text>分享</text></view>
+<view class="share share2">这么好的软件</view>
+<view class="share share3">怎么能一个人知道呢</view>
+<view class="share share4">赶快喊上你的亲朋好友</view>
+<view class="container">
+  <button open-type="share">分享一下</button>
+</view>
+
+

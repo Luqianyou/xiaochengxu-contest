@@ -1,0 +1,32 @@
+/* components/NavHeader/NavHeader.wxss */
+@import "/iconfong/iconfont.wxss";
+
+.header{
+margin-bottom: 10rpx;
+}
+
+.header .title{
+  font-size: 32rpx;
+  line-height: 80rpx;
+  color: #666;
+  font-weight: bind;
+}
+
+.header .more{
+  float: right;
+  color: black !important;
+}
+
+.header .more:active{
+  color: #ccc;
+}
+
+.header .iconfont{
+font-size: 35rpx;
+color: #CD0000;
+}
+
+.header .iconfont:active{
+  color: #ccc;
+}
+

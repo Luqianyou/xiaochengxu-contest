@@ -1,0 +1,21 @@
+<!--miniprogram/pages/info/info.wxml-->
+<view class="FoodShow">
+  <image class="FoodImage" src="{{shopList.shopListimg}}"></image>
+  <view class="title">{{shopList.shopTitle}}</view>
+  <view class="methods">材料</view>
+  <view wx:for="{{shopList.cailiao}}" wx:key="key" >
+    <view class="number">{{item.weight}}</view>
+    <view class="material">{{item.yongliao}}</view>
+  </view>
+  <view class="text">步骤:
+    <view class="fx2" bindtap="Favorites" data-content="{{shopList}}" data-CurrentId="{{CurrentId}}" data-Value="{{Value}}"> 收藏</view>
+  </view>
+  
+  <view wx:for="{{shopList.context}}" wx:key="key" class="Box">
+    <view class="setup">{{item.bz}}</view>
+    <view class="context">{{item.text}}</view>
+  </view>
+  <button class="buttonbox" bindtap="buyGoods">购买材料</button>
+</view>
+
+

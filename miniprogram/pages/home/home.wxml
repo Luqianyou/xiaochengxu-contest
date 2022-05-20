@@ -1,0 +1,28 @@
+<!--pages/home/home.wxml-->
+<view class="page">
+  <!-- 顶部导航 -->
+  <view class="swiper-tab">
+    <view class="tab-item {{currentTab==0 ? 'on': ''}}" data-current="0" bindtap="swichNav">家常</view>
+    <view class="tab-item {{currentTab==1 ? 'on': ''}}" data-current="1" bindtap="swichNav">早餐</view>
+    <view class="tab-item {{currentTab==2 ? 'on': ''}}" data-current="2" bindtap="swichNav">面食</view>
+    <view class="tab-item {{currentTab==3 ? 'on': ''}}" data-current="3" bindtap="swichNav">汤类</view>
+    <view class="tab-item {{currentTab==4 ? 'on': ''}}" data-current="4" bindtap="swichNav">素菜</view>
+    <view class="tab-item {{currentTab==5 ? 'on': ''}}" data-current="5" bindtap="swichNav">午餐</view>
+    <view class="tab-item {{currentTab==6 ? 'on': ''}}" data-current="6" bindtap="swichNav">烧烤</view>
+    <view class="tab-item {{currentTab==7 ? 'on': ''}}" data-current="7" bindtap="swichNav">甜点</view>
+  </view>
+  <!-- 类容主题区域 -->
+  <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+    <swiper-item class="bcimage" wx:for="{{ orderlist }}" wx:key="key" id="{{item.id}}">
+      <view class="ChooseFood" >
+        <view wx:for="{{ item.subArr }}" wx:for-item="data" wx:key="key" >
+          <image class="ChooseImg" src="{{ data.imgSrc }}" id="{{item.id}}" bindtap="ChooseFood" data-value="{{index}}"></image>
+          <view class="TextImg">{{data.imgText}}</view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class="bottom">
+  <text>-------------已经到底了-------------</text>
+</view>
+</view>

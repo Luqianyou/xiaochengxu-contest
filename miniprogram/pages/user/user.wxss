@@ -1,0 +1,159 @@
+@import "/iconfong/iconfont.wxss";
+/* 用户信息 */
+/* ::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+} */
+page{
+  background-color: #edece8;
+  height: 100%;
+  overflow: hidden;
+}
+.user_info_wrap{
+  height: 300rpx;
+}
+.user_img_wrap{
+  position: relative;
+}
+.user_img_wrap .user_bg{
+  height: 200rpx;
+  width: 100%;
+  filter: blur(10rpx);
+}
+.user_info_wrap .user_info{
+  position: absolute;
+  /* 水平居中 */
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.user_info_wrap .user_info .user_icon{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user_info_wrap .user_info .user_name{
+  color: #000;
+  margin-top: 20rpx;
+  /* font-size: 40rpx; */
+}
+/* 功能列表 */
+/* 公共样式 border_style */
+.border_style{
+  border-radius: 20rpx 20rpx 0 0;
+}
+
+  /* 历史足迹 */
+.user_content{
+  position: relative;
+
+}
+.user_content .user_main{
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25rpx;
+  color: #666;
+  padding-bottom: 100rpx;
+}
+.user_main .history_wrap{
+  background-color: #fff;
+  display: flex;
+}
+.user_main .history_wrap navigator{
+  flex: 1;
+  text-align: center;
+  padding: 5rpx 0;
+}
+.user_main .history_wrap .his_num{
+  color: #9999ff;
+}.user_main .history_wrap .his_name{
+  font-size: 28rpx;
+}
+  /* 常用功能 */
+.orders_wrap{
+  background-color: #fff;
+  margin-top: 30rpx;
+}
+.orders_wrap .orders_title{
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.orders_wrap .orders_content{
+  /* 伸缩 */
+  display: flex;
+}
+.orders_wrap .orders_content navigator{
+  flex: 2;
+  text-align: center;
+  padding: 20rpx;
+}
+/* .orders_content navigator .iconfont{
+  color: #9999ff;
+  font-size: 40rpx;
+} */
+.iconfont {
+  color: #9999ff;
+  font-size: 40rpx;
+}
+.orders_content navigator .orders_name{
+  font-size: 28rpx;
+}
+/* 收货地址管理 */
+.address_wrap{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  border-radius: 20rpx 20rpx 0 0;
+}
+
+/* 应用信息 */
+.app_info_wrap{
+  margin-top: 30rpx;
+  background-color: #fff;
+}
+.app_info_wrap .app_info_item{
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+/* 联系客服 */
+.app_info_wrap .app_info_contact{
+  display: flex;
+  /* 两边对齐 */
+  justify-content: space-between;
+}
+/* 推荐 */
+.recommend_wrap{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 20rpx;
+}
+/* 宣传语 */
+
+
+/* surprise */
+.happy .surprise{
+  height: 78rpx;
+  background-color: #9999ff;
+  text-align: center;
+  line-height: 78rpx;
+  font-size: 40rpx;
+}
+.happy .surprise:first-child{
+  margin-top: 120rpx;
+}
+
+.happy .surprise0 {
+  color: #fff;
+  border-radius: 0 0 70rpx 70rpx;
+}
+
+

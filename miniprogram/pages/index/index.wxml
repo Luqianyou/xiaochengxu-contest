@@ -1,0 +1,104 @@
+<view class="indexContainer">
+  <!-- 头部搜索 -->
+  <view class="top">
+    <text class="image iconfont icon-cai1"></text>
+    <view class="search" bindtap="toHome">
+      查看菜单
+    </view>
+    <text class="image iconfont icon-zuofan"></text>
+</view>
+  <!-- 轮播图 -->
+  <swiper class="banner" indicator-dots indicator-color="#F8F8FF" indicator-active-color="#474747" autoplay interval="5000" circular>
+    <swiper-item wx:for="{{caiList}}" wx:key="*this">
+      <image src="{{item.imageSrc}}"></image>
+    </swiper-item> 
+  </swiper>
+  <!-- 导航图标区域 -->
+  <view class="navContainer">
+    <view class="navItem" bindtap="leap1">
+      <text>家常</text>
+    </view>
+    <view class="navItem" bindtap="leap2">
+      <text>早餐</text>
+    </view>
+    <view class="navItem" bindtap="leap3">
+      <text>面食</text>
+    </view>
+    <view class="navItem" bindtap="leap4">
+      <text>汤类</text>
+    </view>
+    <view class="navItem" bindtap="leap5">
+      <text>素菜</text>
+    </view>
+    <view class="navItem" bindtap="leap6">
+      <text>荤菜</text>
+    </view>
+    <view class="navItem" bindtap="leap7">
+      <text>烧烤</text>
+    </view>
+    <view class="navItem" bindtap="leap8">
+      <text>甜点</text>
+    </view>
+  </view>
+
+  <!-- 推荐菜单 -->
+  <view class="recommerdcontainer">
+    <!-- 头部区域 -->
+  <NavHeader title="推荐菜单" nav="今日热门"></NavHeader>
+
+<!-- 大图标 -->
+<view class="bigrecommer">
+  <image src="cloud://wx01-xp0jx.7778-wx01-xp0jx-1301819682/images/bang2.jpg"></image>
+</view>
+
+  <!-- 滑动内容区 -->
+  <scroll-view class="recommendScroll" enable-flex scroll-x>
+    <view class="scrollItem" wx:for="{{orderlist1.subArr}}" wx:key="*this">
+      <image class="ChooseImg" src="{{ item.imgSrc }}" id="{{orderlist1.id}}" bindtap="ChooseFood" data-value="{{index}}"></image>
+      <text>{{ item.imgText}}</text>
+    </view>
+  </scroll-view>
+</view>
+
+<!-- 小吃烧烤 -->
+<view class="recommerdcontainer">
+    <!-- 头部区域 -->
+  <NavHeader title="小吃烧烤" nav="人气优选"></NavHeader>
+  
+<!-- 大图标 -->
+<view class="bigrecommer">
+  <image src="cloud://wx01-xp0jx.7778-wx01-xp0jx-1301819682/images/bang1.jpg"></image>
+</view>
+
+  <!-- 滑动内容区 -->
+  <scroll-view class="recommendScroll" enable-flex scroll-x>
+    <view class="scrollItem" wx:for="{{orderlist2.subArr}}" wx:key="*this">
+      <image class="ChooseImg" src="{{ item.imgSrc }}" id="{{orderlist2.id}}" bindtap="ChooseFood" data-value="{{index}}"></image>
+      <text>{{ item.imgText}}</text>
+    </view>
+  </scroll-view>
+</view>
+ 
+<!-- 蛋糕甜点 -->
+<view class="recommerdcontainer">
+    <!-- 头部区域 -->
+  <NavHeader title="蛋糕甜点" nav="精品推荐"></NavHeader>
+  
+<!-- 大图标 -->
+<view class="bigrecommer">
+  <image src="cloud://wx01-xp0jx.7778-wx01-xp0jx-1301819682/images/bang3.jpg"></image>
+</view>
+
+  <!-- 滑动内容区 -->
+  <scroll-view class="recommendScroll" enable-flex scroll-x>
+    <view class="scrollItem" wx:for="{{orderlist3.subArr}}" wx:key="*this">
+      <image class="ChooseImg" src="{{ item.imgSrc }}" id="{{orderlist3.id}}" bindtap="ChooseFood" data-value="{{index}}"></image>
+      <text>{{ item.imgText}}</text>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="bottom">
+  <text>-------------已经到底了-------------</text>
+</view>
+</view>

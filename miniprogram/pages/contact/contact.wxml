@@ -1,0 +1,65 @@
+<!--pages/contact/contact.wxml-->
+
+
+
+<!-- <text class="contact">联系客服</text> -->
+<!-- <view>
+  <text class="contact_style">联系方式</text>
+  <view class="call_contact">
+    <text>电话联系</text>
+    <text bindtap="tophoneCall" >请拨打手机号：15333930892</text>
+    <view class="weui-cell__bd">王小鹿</view>
+
+<view class="weui-cell__bd">188****4638</view>
+  </view>
+  <view class="wx_contact"><button open-type="contact">微信联系</button></view>
+
+</view> -->
+<view class="kefu">
+  <text>联系客服</text>
+</view>
+<view class="container">
+    <!-- The timeline items container -->
+    <ul class="container__items">
+        <!-- Each timeline item -->
+        <li class="container__item">
+            <!-- The circle and title -->
+            <view class="container__top">
+                <!-- The circle -->
+                <view class="container__circle"></view>
+
+                <!-- The title -->
+                <view class="container__title">
+                    电话联系
+                </view>
+            </view>
+
+            <!-- The description -->
+            <view class="container__desc" bindtap="tophoneCall">
+                <button>客服001：15333930892</button>
+                <button>客服002：15333930892</button>
+                <button>客服003：15333930892</button>
+                <button>客服004：15333930892</button>
+            </view>
+        </li>
+
+        <!-- Repeat other items -->
+        <li class="container__item">
+            <!-- The circle and title -->
+            <view class="container__top">
+                <!-- The circle -->
+                <view class="container__circle container__circle1"></view>
+
+                <!-- The title -->
+                <view class="container__title">
+                  微信联系
+                </view>
+            </view>
+
+            <!-- The description -->
+            <view class="container__desc">
+              <button class="btn1" open-type="contact">微信联系</button>
+            </view>
+        </li>
+    </ul>
+</view>

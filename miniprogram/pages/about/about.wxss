@@ -1,0 +1,21 @@
+/* pages/about/about.wxss */
+page{
+  position: relative;
+}
+.about_top{
+  font-size: 50rpx;
+  color: #ccc;
+}
+.about{
+  text-align: center;
+}
+image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.about_bottom{
+  position: absolute;
+  bottom: 5rpx;
+  left: 90rpx;
+  color: #ccc;
+}

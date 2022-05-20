@@ -1,0 +1,65 @@
+/* miniprogram/pages/info/info.wxss */
+.FoodImage {
+  height: 700rpx;
+  width: 100%;
+  border: 5rpx dashed pink;
+}
+.FoodShow {
+  margin-left:15rpx ;
+  margin-right:15rpx ;
+  background-color: #F4F4F4;
+}
+.title {
+  text-align: center;
+  font-size: 45rpx;
+}
+
+.material {
+  border-bottom: 1rpx dashed pink;
+}
+.number {
+  float: right;
+  overflow: hidden;
+}
+.methods {
+  margin-bottom: 25rpx;
+}
+.setup {
+  /* border: 2rpx dashed skyblue;
+  border-radius: 80%; */
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 35rpx;
+  text-align: center;
+}
+.context {
+  padding-left: 10rpx;
+  background-color: #e6fcf9;
+  border-style: dotted solid double dashed;
+  right: 15rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+.text {
+  margin-top: 20rpx;
+  margin-bottom: 25rpx;
+  font-size: 45rpx;
+}
+
+.fx2 {
+  width: 100rpx;
+  height: 50rpx;
+  background-color: #fff;
+  float: right;
+  font-size: 30rpx;
+  text-align: center;
+  border: 2px dashed pink;
+  border-radius: 80%;
+  /* overflow: hidden; */
+}
+
+.buttonbox{
+  background-color:#BDBDBD;
+  border: 2rpx solid #EDEDED;
+  margin-top: 20rpx;
+}

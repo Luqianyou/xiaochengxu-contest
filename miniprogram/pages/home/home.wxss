@@ -1,0 +1,54 @@
+/* pages/home/home.wxss */
+/* tab的样式 */
+.page {
+  margin-left: 10rpx;
+  margin-right: 10rpx; 
+}
+.swiper-tab {
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #777;
+}
+.tab-item {
+  width: 20%;
+  text-align: center;
+  font-size: 15px;
+  color: #777;
+}
+.swiper {
+  height: 1500rpx;
+  /* background-color: #97f2b6; */
+}
+.on {
+  color: blue;
+  border-bottom: 5rpx solid blue;
+}
+
+/* 设置图片样式 */
+.ChooseFood {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ChooseImg {
+  height: 400rpx;
+  width: 350rpx;
+  margin: 4rpx 3rpx;
+  /* padding: 47rpx; */
+  margin-bottom: 0;
+  border: 5rpx dashed pink;
+}
+
+.TextImg {
+  font-size: 35rpx;
+  text-align: center;
+  padding-bottom: 10rpx;
+  
+}
+
+.bottom{
+  margin: 20rpx 0;
+  text-align: center;
+}
+

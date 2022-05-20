@@ -1,0 +1,30 @@
+<view class="shopContainer">
+  <!-- 头部轮播图 -->
+  <swiper class="banner" indicator-dots indicator-color="#F8F8FF" indicator-active-color="#474747" autoplay interval="5000" circular>
+    <swiper-item wx:for="{{caiList}}" wx:key="*this">
+      <image src="{{item.imageSrc}}"></image>
+    </swiper-item> 
+  </swiper>
+  
+  <view class="menu">
+    <!-- 左侧菜单栏 -->
+  <scroll-view class="navLeft" scroll-y>
+    <view wx:for="{{MenuList}}" wx:key="*this" class="{{leftNum==index ? 'active' : ''}}" catchtap="leftClick" data-myindex="{{index}}">
+      <text class="{{item.confont}}"></text>
+      {{item.title}}</view>
+  </scroll-view>
+
+  <!-- 右侧菜单栏 -->
+  <scroll-view class="menuRight" scroll-y bindscroll="rightScroll" scroll-into-view="{{rightId}}" scroll-with-animation>
+    <view wx:for="{{MenuList}}" wx:key="*this" id="{{'right'+item.id}}" class="box">
+      <view class="box_title">{{item.title}}</view>
+      <view class="box_content">
+        <view wx:for="{{item.subArr}}" wx:key="*this" wx:for-item="val">
+          <image class="menufood" src="{{val.imgSrc}}" mode="widthFix" bindtap="shopList" id="{{item.id}}" data-content="{{index}}"></image>
+          <text>{{val.imgText}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+</view>

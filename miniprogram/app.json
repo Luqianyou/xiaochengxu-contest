@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/Login/Login",
+    "pages/shipin/shipin",
+    "pages/user/user",
+    "pages/near/near",
+    "pages/gouwu/gouwu",
+    "pages/shop/shop",
+    "pages/shop_list/shop_list",
+    "pages/index/index",
+    "pages/zhifu/zhifu",
+    "pages/home/home",
+    "pages/info/info",
+    "pages/favorites/favorites",
+    "pages/recommend/recommend"
+  ],
+  "sitemapLocation": "sitemap.json",
+  "window": {
+    "navigationBarBackgroundColor": "#9999ff",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "做菜否"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#9999ff",
+    "backgroundColor": "#F7F7F7",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/首页.png",
+        "selectedIconPath": "/images/首页-a.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "市场",
+        "iconPath": "/images/超市.png",
+        "selectedIconPath": "/images/超市-a.png"
+      },
+      {
+        "pagePath": "pages/gouwu/gouwu",
+        "text": "购物车",
+        "iconPath": "/images/购物车-a.png",
+        "selectedIconPath": "/images/购物车.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "/images/首页-用户.png",
+        "selectedIconPath": "/images/首页-用户-a.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<!--pages/feedback/feedback.wxml-->
+
+<view class="feedback_top">
+  <view><image src="/images/feedback.jpg"></image></view>
+  <view class="feedback_text">
+    <view>快来告诉我</view>
+    <view>你对做菜吧有哪些问题或建议</view>
+    <view>点击下方的转盘按钮吧</view>
+    <view>就可以告诉我啦</view>
+  </view>   
+</view>
+<view class="g-container">
+  
+    <view class="g-circle">
+      <button open-type="feedback">意见反馈</button>
+    </view>
+  </view>

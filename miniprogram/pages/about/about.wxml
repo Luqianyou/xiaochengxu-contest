@@ -1,0 +1,18 @@
+<!--pages/about/about.wxml-->
+
+<view class="about_top"><text>关于我们</text></view>
+<view class="about">
+  <view class="logo">
+    <image src="cloud://wx01-xp0jx.7778-wx01-xp0jx-1301819682/images/美食书.png"></image>
+  </view>
+  <view><text>做菜否</text></view>
+  <view><text>当前版本V1</text></view>
+</view>
+<text style="white-space:pre-wrap">       
+      做菜否是我们为喜欢做菜的用户打造小程序平台的在线教学app。在这里您可以在线观看大量的精品教程；您可以随时随地搜索您喜欢吃的菜，以及学习如何亲手做出自己喜欢吃的菜。
+      做菜否是由我们团队推出的第一个关于做菜以及购物app，聚合了优质教程和高品质、高安全的食品。做菜吧app结合各种外卖app的菜品售卖以及做菜课程app的教程，提供各种炒菜、烧烤、甜品供用户购买，同时还提供做菜教程。做菜吧改善了人们不会做菜、做菜难吃的现状，通过做菜吧可以让更多个人都会做菜，而且亲手做自己喜欢吃的菜会让人们有成就感以至于心情愉悦，更好的享受生活、幸福的生活。
+      做菜否，做出自己喜欢的菜，享受有仪式感的生活。
+</text>
+<view class="about_bottom">
+  <text>Copyright © 2021 做菜否版权所有</text>
+</view>

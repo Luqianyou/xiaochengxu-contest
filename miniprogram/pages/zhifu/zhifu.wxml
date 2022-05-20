@@ -1,0 +1,34 @@
+<view class="Gouwu_container">
+  <!-- 收货地址 -->
+  <view class="revice_address_row">
+    <view class="address_btn" wx:if="{{!address.userName}}">
+      <button bindtap="handleoptadress">获取地址</button>
+    </view>
+    <view class="user_info_row" wx:else>
+      <view class="user_info">
+        <view>{{address.userName}}</view>
+        <view>{{address.provinceName+address.cityName+address.countyName+address.detailInfo}}</view>
+      </view>
+      <view class="user_phone">{{address.telNumber}}</view>
+    </view>
+  </view>
+  <!-- 订单详情 -->
+  <scroll-view class="Gouwubox" scroll-y>
+    <view class="Gouwu_title" wx:for="{{gouwulist}}" wx:key="*this">
+      <view class="Gouwuleft">
+        <image src="{{item.content.shopListimg}}"></image>
+      </view>
+      <view class="Gouwuright">
+        <view class="righttitle">{{item.content.shoptitle}}</view>
+        <view class="Gouwusl">
+          <view class="price">￥{{item.content.price}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 付款 -->
+  <view class="Gouwubottom">
+    <view class="allprice">总价：￥{{allprice}}</view>
+    <view class="jiebutton" bindtap="showtoast">支付</view>
+  </view>
+</view>

@@ -1,0 +1,183 @@
+/* pages/index/index.wxss */
+@import "/iconfong/iconfont.wxss";
+page{
+  background-color:#F4F4F4;
+  height: 100%;
+}
+
+.indexContainer{
+  height: 100%;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+
+/* 导航搜索区 */
+.indexContainer .top{
+  display: flex;
+  margin: 20rpx 0;
+}
+.indexContainer .top .image{
+  width: 60rpx;
+  height: 60rpx;
+  font-size: 60rpx;
+}
+
+.indexContainer .top .search{
+  border:1px solid #eee;
+  margin: 0 20rpx;
+  flex: 2;
+  border-radius: 10rpx;
+  text-align: center;
+  margin: 0 20rpx;
+  font-size: 26rpx;
+  line-height: 60rpx;
+  color:black;
+  background-color: #FFCC00;
+}
+
+/* 轮播图样式 */
+.banner{
+  width: 100%;
+  height: 350rpx;
+  border-radius:20rpx;
+  overflow: hidden;
+}
+
+.banner image{
+  width: 100%;
+  height: 100%;
+}
+
+/* 图标导航区域样式 */
+.navContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.navItem{
+  width: 21%;
+  height: 100rpx;
+  line-height: 90rpx;
+  text-align: center;
+  border:1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 15rpx;
+  margin: 30rpx 15rpx;
+  margin-bottom: 0;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.navItem:nth-child(1){
+  background-image: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1151607735,3163544189&fm=26&gp=0.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.navItem:nth-child(2){
+  background-image: url(https://tse3-mm.cn.bing.net/th/id/OIP.5nFPUylVqUgA_xvt6frtgQHaFM?w=250&h=180&c=7&o=5&dpr=1.25&pid=1.7);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.navItem:nth-child(3){
+  background-image: url(https://tse3-mm.cn.bing.net/th/id/OIP.lnYx-WnMojxd4OSUGCtKtAHaEZ?w=315&h=187&c=7&o=5&dpr=1.25&pid=1.7);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.navItem:nth-child(4){
+  background-image: url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4034825740,2324134536&fm=26&gp=0.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.navItem:nth-child(5){
+  background-image: url(https://tse1-mm.cn.bing.net/th/id/OIP._5ekzZ2efmh3CJjsaa9WjwHaE8?w=257&h=180&c=7&o=5&dpr=1.25&pid=1.7);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.navItem:nth-child(6){
+  background-image: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=248942712,978680536&fm=26&gp=0.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.navItem:nth-child(7){
+  background-image: url(https://tse2-mm.cn.bing.net/th/id/OIP.9H5x6-D-Gj8ghC6uWRHRAAHaE6?w=300&h=199&c=7&o=5&dpr=1.25&pid=1.7);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.navItem:nth-child(8){
+  background-image: url(https://tse1-mm.cn.bing.net/th/id/OIP.-6-Z2SBkzEDW8FOGWJ4o2wHaEK?w=280&h=180&c=7&o=5&dpr=1.25&pid=1.7);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.navItem text{
+  color: #fff;
+  font-size: 40rpx;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.navItem text:active{
+  color: #ccc;
+}
+
+/* 推荐菜单 */
+.recommerdcontainer{
+padding: 20rpx;
+padding-top: 0;
+background: #fff;
+margin: 20rpx;
+border-radius: 30rpx;
+}
+
+/* 大图标区域 */
+.recommerdcontainer .bigrecommer{
+  width: 100%;
+  height: 300rpx;
+  margin: 30rpx 0;
+}
+
+.recommerdcontainer .bigrecommer image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50rpx;
+}
+
+/* 内容推荐区 */
+.recommendScroll{
+  display: flex;
+  height: 350rpx;
+}
+
+.scrollItem{
+  width: 300rpx;
+  margin-right: 20rpx;
+  text-align: center;
+}
+
+.scrollItem image{
+width: 300rpx;
+height: 300rpx;
+border-radius: 10rpx;
+}
+
+.scrollItem text{
+  font-size: 26rpx;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+/* 底部设置 */
+.bottom{
+  margin: 20rpx 0;
+  text-align: center;
+}
+
+.bottom text{
+  color: #ccc;
+}

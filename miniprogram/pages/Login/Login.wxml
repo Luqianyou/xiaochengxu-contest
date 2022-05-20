@@ -1,0 +1,11 @@
+<view class="LoginContainer">
+  <block wx:if="{{!hasUserInfo}}">
+    <text class="handletext">一起来体验做菜的快乐吧!!!</text>
+    <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" class="NoUserhead">登录</button>
+  </block>
+  <block wx:else>
+  <image bindtap="bindViewTap" class="Userhead" src="{{userInfo.avatarUrl}} "></image>
+  <text class="logintext">{{userInfo.nickName}}</text>
+  <button class="toLogs" catchtap="toLogs">点击进入</button>
+</block>
+</view>

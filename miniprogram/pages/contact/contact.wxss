@@ -1,0 +1,97 @@
+/* pages/contact/contact.wxss */
+
+
+
+.container {
+  /* Used to position the left vertical line */
+  position: relative;
+  top: 20rpx;
+}
+
+
+.kefu { left: 33%;
+  position: fixed;
+  top: 850rpx;
+  font-size: 50rpx;
+  text-align: center;
+  line-height: 100rpx;
+  width: 200rpx;
+  height: 100rpx;
+  margin: auto;
+  border: 20rpx solid;
+  border-image: linear-gradient(45deg, #04BE02, #f99) 1;
+  clip-path: inset(0px round 10px);
+  animation: huerotate 6s infinite linear;
+  filter: hue-rotate(360deg);
+  background-color: #ccc;
+}
+
+
+@keyframes huerotate {
+  0% {
+      filter: hue-rotate(0deg);
+  }
+  100% {
+      filter: hue-rorate(360deg);
+  }
+}
+
+
+
+.container {
+  position: relative;
+}
+
+
+.container__items {
+  list-style-type: none;
+  margin: 0rpx;
+  padding: 10rpx;
+  font-size: 50rpx;
+}
+
+.container__item {
+  margin-bottom: 40rpx;
+  
+}
+
+.container__top {
+  align-items: center;
+  display: flex;
+  
+}
+
+.container__circle {
+  background-color: #f99;
+  border-radius: 50%;
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.container__circle1{
+background-color: #04BE02;
+}
+.container__title {
+  flex: 1;
+  
+}
+
+.container__desc {
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+button{
+  border: 2rpx solid #ccc;
+  border-radius: 10rpx;
+  background: linear-gradient(#fff,#f99);
+}
+.container__desc .btn1{
+  background: linear-gradient(#fff,#04BE02);
+}
+
+
+
+
+
+

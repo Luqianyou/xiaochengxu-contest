@@ -1,0 +1,56 @@
+page{
+  background-image: url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4239190395,1031763100&fm=11&gp=0.jpg);
+  background-size: 100% 100%;
+}
+.LoginContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Userhead{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 200rpx 0 0 0;
+  border-radius: 50%;
+}
+.NoUserhead{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 200rpx 0 0 0;
+  border-radius: 50%;
+  color: 	#EDEDED;
+  background-color: rgba(155, 155, 155, 0.1);
+  line-height: 200rpx;
+  z-index: 9;
+}
+.handletext{
+  margin: 150rpx 0 -150rpx 30rpx;
+  color: 	#EDEDED;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 1000;
+}
+
+.logintext{
+  margin: 20rpx 0;
+  color: #EDEDED;
+}
+
+.donghua{
+  width: 100%;
+}
+
+.toLogs{
+  background-color: rgba(150, 150, 150, 0.5);
+}
+
+.donghua{
+  width: 100%;
+}
+.donghua image{
+  margin-top: -50rpx;
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 5%;
+  position: absolute;
+  z-index: 999;
+}

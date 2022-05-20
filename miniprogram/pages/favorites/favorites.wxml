@@ -1,0 +1,7 @@
+<!--miniprogram/pages/favorites/favorites.wxml-->
+<view wx:for="{{ orderlist }}" wx:key="{{key}}" class="Box">
+  <view class="text">{{item.content.shopTitle}}</view>
+  <image class="image" src="{{item.content.shopListimg}}"></image>
+  <view class="delete" bindtap="delete" data-index="{{orderlist[index]}}">删除</view>
+  <view  bindtap="ChooseFood" data-CurrentId="{{item.currentid}}" data-Value="{{item.value}}">详情跳转</view>
+</view>

@@ -1,0 +1,98 @@
+/* pages/zhifu/zhifu.wxss */.Gouwu_container{
+  height: 100%;
+  background-color: #F4F4F4;
+}
+
+/* 支付样式 */
+.revice_address_row{
+  border-bottom: 1rpx solid #ccc;
+}
+.revice_address_row .address_btn{
+padding: 20rpx;
+}
+
+.address_btn button{
+  width: 60%;
+}
+
+.user_info_row{
+  display: flex;
+  padding: 20rpx;
+}
+
+.user_phone{
+  flex: 3;
+  text-align: reght;
+}
+.user_info{
+  flex: 5;
+}
+
+.Gouwubox{
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.Gouwu_title{
+  display: flex;
+  background-color: white;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin-bottom: 30rpx;
+}
+
+/* 左侧设置 */
+.Gouwuleft image{
+  width: 200rpx;
+  height: 150rpx;
+  margin-left: 10rpx;
+}
+
+/* 右侧设置 */
+.Gouwuright{
+  flex: 70%;
+}
+.Gouwuright .righttitle{
+text-align: center;
+}
+
+.Gouwuright .Gouwusl{
+  float: right;
+  margin-top: 50rpx;
+}
+
+.Gouwuright .price{
+  float: left;
+  margin-right: 50rpx;
+  color: red;
+}
+
+/* 底部设置 */
+.Gouwubottom{
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  line-height: 100rpx;
+  background-color: white;
+}
+
+.Gouwubottom .allprice{
+  float: left;
+  margin-left: 30rpx;
+}
+
+.Gouwubottom .jiebutton{
+  float: right;
+  border: 3rpx solid red;
+  border-radius: 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  box-sizing: border-box;
+  color:white;
+  background-color: red;
+  padding: 20rpx 30rpx;
+  padding-top: 0;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+}

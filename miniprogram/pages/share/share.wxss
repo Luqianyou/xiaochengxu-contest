@@ -1,0 +1,52 @@
+/* pages/share/share.wxss */
+
+.share{
+  height: 50rpx;
+  display: flex;
+  font-size: 50rpx;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx;
+  margin: 20rpx auto;
+}
+.share1{
+  padding: 15rpx;
+}
+.share1 text{
+  display: grid;
+  height: 200rpx;
+  width: 200rpx;
+  line-height: 200rpx;
+  margin: 0 auto;
+  border: 2rpx solid red;
+  border-radius: 50%;
+  font-size: 60rpx;
+  background-color: #9cf;
+  text-align: center;
+
+
+}
+.share2{
+  background-color: #ffc;
+}
+.share3{
+  background-color: #cfc;
+}
+.share4{
+  background-color: #6cc;
+}
+
+
+
+
+
+.container {
+  align-items: center;
+  /* display: flex; */
+  justify-content: center;
+  padding: 80rpx;
+}
+.container button{
+  background-color: yellow;
+  box-shadow: 10rpx 10rpx #ccc;
+}

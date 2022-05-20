@@ -1,0 +1,26 @@
+<!--pages/shop_list/shop_list.wxml-->
+<view class="shopListContainer">
+  <!-- 顶部商品图 -->
+  <view class="shoplisttop">
+    <image src="{{shopList.shopListimg}}"></image>
+  </view>
+  <!-- 内容详情 -->
+  <view class="content">
+  <view class="shopping">
+    <text class="title">{{shopList.shoptitle}}</text>
+    <view>
+    <view class="price">￥{{shopList.price}}</view>
+    <view class="shoptop" bindtap="addshop" data-content="{{shopList}}">+加入购物车</view>
+  </view>
+  </view>
+  <view class="sh_describe">
+    <text class="title">商品详情</text>
+    <view class="shopcontent">{{shopList.shopcontent}}</view>
+  </view>
+</view>
+  <!--购物车图标-->
+  <view class="shopcar-view" catchtap = "showshopcar">
+    <view wx:if="{{Gouwunum != 0}}">{{Gouwunum}}</view>
+    <image src="/images/shop.png" bindtap="toGouwulist"></image>
+</view>
+</view>

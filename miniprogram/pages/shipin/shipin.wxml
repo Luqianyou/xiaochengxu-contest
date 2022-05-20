@@ -1,0 +1,8 @@
+<scroll-view scroll-y>
+  <view class="videobox"  wx:for="{{videoArr}}" wx:key="*this">
+    <view class="title">{{item.title}}</view>
+  <video id="myVideo" class="video" src="{{item.vedio}}"
+   controls enable-auto-rotation
+    show-screen-lock-button show-snapshot-button></video>
+  </view>
+</scroll-view>

@@ -1,0 +1,22 @@
+<view class="Gouwu_container">
+  <!-- 选定商品显示 -->
+  <scroll-view class="Gouwubox" scroll-y>
+    <view class="Gouwu_title" wx:for="{{gouwulist}}" wx:key="*this">
+      <view class="Gouwuleft">
+        <image src="{{item.content.shopListimg}}"></image>
+      </view>
+      <view class="Gouwuright">
+        <view class="righttitle">{{item.content.shoptitle}}</view>
+        <view class="Gouwusl">
+          <view class="price">￥{{item.content.price}}</view>
+          <view bindtap="deletshop" class="deletshop" data-index="{{gouwulist[index]}}">删除</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 底部总价 -->
+  <view class="Gouwubottom">
+    <view class="allprice">总价：￥{{allprice}}</view>
+    <view class="jiebutton"  bindtap="tozhifu">结算</view>
+  </view>
+</view>
